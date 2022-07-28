@@ -8,7 +8,7 @@ negros = [x for x in range(1,total_casillas+1) if x % 2 == 0]
 ruleta_sin_ceros = rojos + negros
 
 def girar_ruleta(ruleta,rojos,negros):
-    ruleta = ruleta + [0,1000]
+    ruleta = ruleta + ['0','00']
     numero_ganador = np.random.choice(ruleta)
     if numero_ganador in rojos:
         color_ganador = 'Rojo'
